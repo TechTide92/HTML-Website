@@ -1,0 +1,442 @@
+<!
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES</title>
+    <style>
+        table,th,td{
+            border: 1px groove rgb(231, 180, 113);
+            /* border-collapse:collapse; */
+            border-radius:4px;
+        }
+        th,td{
+            background-color:bisque
+        }
+        fieldset {
+      border: 2px solid #333;     /* Border color */
+      border-radius: 15px;
+      }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">HTML-HYPER TEXT MARKUP LANGUAGE</h1>
+    <h2>HTML Headings (&lt;h1&gt; to &lt;h6&gt;)</h2>
+    <p>Headings are the tittles or Subtittles that you want to display on Webpage.</p>
+    <p>HTML provides six levels of headings (h1 to h6) arranged in order of priority, where h1 is the main title or has highest Priority and h6 is the least important, Lowest Priority.</p>
+    <p>HTML is a block-level element means it always starts on a new line in the webpage</p>
+    <p>You should use only one &lt;h1&gt; per page as it is the main title, while &lt;h2&gt; to &lt;h6&gt; can be used multiple times for sections and subsections.</p>
+    <h3>Comparison of different types of headings : </h3>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Paragraph &lt;p&gt;</h2>
+    <p>A paragraph always starts on a new line because &lt;p&gt; is a block-level element.</p>
+    <p>Multiple spaces or new lines inside &lt;p&gt; are ignored by the browser.</p>
+    <p>You can you &lt;br&gt; to break the line inside a pragraph.</p>
+    <p>If you want to add spaces or extra lines in your text, you can use &lt;pre&gt; instead of &lt;p&gt;, because &lt;pre&gt; keeps the formatting exactly as written.</p>
+    
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>HTML Attributes</h2>
+    <h3>1. href attribute (used with &lt;a&gt;) : Specifies the URL the anchor tag (&lt;a&gt;) points to.</h3>
+    <fieldset>
+    <p>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;</p> 
+    </fieldset>
+    <p>target="_blank" -> It tells the browser to open the link in newe tab.</p>
+
+    <br>
+
+    <h3>2. src attribute (used with &lt;img&gt;) : Specifies the path to the image to be displayed.</h3>
+    <fieldset>
+    <p>&lt;img src="cat.jpg" alt="Cute Cat" width="200px" height="150px"&gt;</p>
+    </fieldset>
+    <p>alt : Provides alternative text if the image cannot be displayed.</p>
+
+    <br>
+
+    <h3>3. Button</h3>
+    <pre>
+        &lt;button type="button"&gt;Button&lt;/button&gt;
+        <b>type button is used to make simple button.</b>
+
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        <b>type submit is used to make Submit button.</b>
+
+        &lt;button type="reset"&gt;Reset&lt;/button&gt;
+        <b>type reset is used to make reset button.</b>
+    </pre>
+    
+    <a href="https://www.google.com" target="_blank"><button>Go to Google</button></a>
+    <p>The above button has an embedded link using anchor tag and href .</p>
+    <fieldset>
+    &lt;a href="https://www.google.com" target="_blank"&gt;&lt;button&gt;Go to Google&lt;/button&gt;&lt;/a&gt;
+    </fieldset>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Tables</h2>
+    <img src="images/12.png" alt="Coded of Table" height="350px" width="500px;">
+    <p>So above is the code of a Table.</p>
+    <ol>
+        <li>&lt;table&gt; → Creates a table.</li>
+        <li>&lt;thead&gt; → Groups the heading section of the table.</li>
+        <ul style="list-style-type:disc;">
+            <li>&lt;th&gt; → Represents a header cell in a table.</li>
+        </ul>
+        <li>&lt;tbody&gt; → Groups the main content rows of the table.</li>
+        <li>&lt;tfoot&gt; → Groups the footer section of the table.</li>
+        <li>&lt;tr&gt; → Represents a table row.</li>
+        <li>&lt;td&gt; → Represents a table data cell.</li>
+    </ol>
+
+    <pre>*colspan → Makes a table cell span across multiple column.
+Usage: Add colspan="number" inside a &lt;td&gt; or &lt;th&gt; tag.
+*rowspan → Makes a table cell span across multiple rows.</pre>
+
+<p>You can make table header in row as well as column also.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Timing</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>9:00</th>
+            <td>Study</td>
+            <td>Study</td>      
+        </tr>
+
+        <tr>
+            <th>4:00</th>
+            <td>GYM</td>
+            <td>GYM</td>      
+        </tr>
+
+        <tr>
+            <th>8:00</th>
+            <td>DSA</td>
+            <td>DSA</td>      
+        </tr>
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+</table>
+
+
+<br><br>
+<hr>
+<br><br>
+
+<h2>HTML LISTS</h2>
+<p>A list is a way to group related items together in a structured way on a webpage.</p>
+<p>There are mainly two type of lists</p>
+<h3>1. Ordered List (&lt;ol&gt;) → items with numbers or letters</h3>
+<p>Basic Syntax of Ordered List</p>
+<pre>&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<p>→ There are 4 types of Style in list, we can use that style by writing this <b>type=""</b></p>
+<p>By using the type="A" it make the style in Uppercase Letters.</p>
+<ol type="A">
+    <li>Chicken</li>
+</ol>
+<p>By using the type="a" it make the style in Lowercase Letters.</p>
+<ol type="a">
+    <li>Mutton</li>
+</ol>
+<p>By using the type="I" it make the style in Roman number Uppercase Letters.</p>
+<ol type="I">
+    <li>Fish</li>
+</ol>
+<p>By using the type="i" it make the style in Roman number Lowercase Letters.</p>
+<ol type="i">
+    <li>Eggs</li>
+</ol>
+<p>fifth one is writing in type="1"</p>
+
+<br>
+
+<h3>2. Unordered List (&lt;ul&gt;) → items with bullet points</h3>
+<p>Basic Syntax of Unordered List</p>
+<pre>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>→ There are 4 types of Style in Unordered list, we can use that style by writing this <b>style="list-style-type:;"</b></p>
+
+<p>By using the style="list-style-type:disc;" it makes this in black circle</p>
+<ul style="list-style-type:disc;">
+    <li>Coffe</li>
+</ul>
+<p>By using the style="list-style-type:circle;" it makes this in not black circle</p>
+<ul style="list-style-type:circle;">
+    <li>Tea</li>
+</ul>
+<p>By using the style="list-style-type:square;" it makes this in square</p>
+<ul style="list-style-type:square;">
+    <li>Milk</li>
+</ul>
+<p>Fouth one is none</p>
+
+<br><br>
+<h3>Nested List</h3>
+<br>
+<h2>Daily Meal Plan</h2>
+<ol>
+    <li>
+        <h3>Breakfast</h3>
+        <ol>
+            <li>Main Dish : OAT MEAL
+                <ul>
+                    <li>Oats</li>
+                    <li>Blue Berries</li>
+                    <li>Banana</li>
+                    <li>Milk 400ML</li>
+                    <li>Peanut Butter</li>
+                </ul>
+            </li>
+            <li>Side : 4 Boiled Eggs</li>
+            <li>Beetroot Juice</li>
+            <li>Vitamin C Tablet</li>
+        </ol>
+    </li>
+    <li>
+        <h3>Lunch</h3>
+    <ul>
+        <li>Main Courses
+            <ol>
+                <Li>Ary Fried 250gm Chicken Breast</Li>
+                <Li>1 Cup of Dal</Li>
+                <Li>4-5 Roti</Li>
+                <Li>Rice</Li>
+            </ol>
+        </li>
+        <li>Side : 1 Glass of Curd</li>
+        <li>Supplement : Fish Oil Tablet</li>
+    </ul>
+    </li>
+    <li>
+        <h3>Dinner</h3>
+        <ul>
+            <li>Roti : 2 Garlic nan</li>
+            <li>Main Course : 300gm Fish
+                <ol>
+                    <li>200Gm Read Meat</li>
+                    <li>glass of Milk</li>
+                    <li>egg White 3</li> 
+                </ol>
+            </li>
+            <li>After Two hour of Dinner Supplement : ZMA</li>
+        </ul>
+    </li>
+</ol>
+
+<p>If you have two make nested list then you have to open that list and make one more ordered/unordered list in there. Imagine a shopping list. You write a main category like Fruits. Then under it, you write the types of fruits like Apple and Orange. This is how nested lists work—main items have sub-items inside them.</p>
+
+<br><br>
+<hr>
+<br><br>
+
+<h2>DIV &lt;div&gt;</h2>
+<p>It is a Container element used to group html element together</p>
+
+<h3>class</h3>
+<p>This attribute is used to group multiple elements together so that they can share the same styles or behaviour.</p>
+<pre>Multiple elements can have the same class.
+CSS syntax: Use a dot (.) before the class name.</pre>
+<h3>id</h3>
+<p>This attribute is used to identify single unique element on the page.</p>
+<pre>
+Each ID must be unique.
+CSS syntax: Use a hash (#) before the ID name.
+</pre>
+
+<hr>
+<br><br>
+
+<h2>HTML FORMS</h2>
+<h2>Form Elements</h2>
+<h3>1. &lt;form&gt; element is used to create an HTML form for user input:</h3>
+<br><br>
+<h3>2. The &lt;label&gt; Element</h3>
+<p>The &lt;label&gt; element is used to give a text description for an input element (like textbox, checkbox, radio button, etc.). <br>It improves usability and accessibility because clicking on the label also activates the input.</p>
+<br><br>
+<h3>3. The &lt;input&gt; Element</h3>
+<p>The &lt;input&gt; element is used to create form fields where users can enter data or make a selection. <br>The behavior of &lt;input&gt; changes depending on its type attribute.</p>
+
+<br>
+<p>After writing this in a code you will get the below Output.</p>
+&lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+&lt;input type="text" id="fname" name="fname"&gt;
+<br><br>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="Firstname">
+
+<h3>for Attribute in &lt;label&gt;</h3>
+<pre>The for attribute is used inside a &lt;label&gt; tag.
+Its value must match the id of the input element it belongs to.</pre>
+<h3>id Attribute in &lt;input&gt;</h3>
+<pre>
+The id attribute inside an &lt;input&gt; uniquely identifies that input field.
+It is mainly used to link the input with a &lt;label&gt; (via the for attribute).
+</pre>
+<h4>How for and id Work together</h4>
+<pre>
+The label has for="fname".
+The input has id="fname".
+Because the values match, they are linked.
+Now when you click on the text "First Name:", the cursor automatically jumps into the textbox, and you can start typing right away.
+if don't use for and id then clicking on “First Name” does nothing. You have to click directly inside the box.
+</pre>
+
+<h3>name Attribute (inside &lt;input&gt;)</h3>
+<pre>
+The name attribute is used by the backend to identify the data when the form is submitted.
+It is the key in the "key-value" pair that gets sent to the server/backend.
+</pre>
+
+<h3>placeholder Attribute</h3>
+<pre>
+The placeholder shows a hint text inside the input box.
+It disappears when the user starts typing.
+It tells the user what kind of input is expected.
+</pre>
+<br><br>
+<h3>4. The &lt;select&gt; Element</h3>
+<p>It Defines a Drop-Down List</p>
+<p>Inside it, we place &lt;option&gt; elements, which are the actual choices.</p>
+
+<img src="images/select.png" alt="Code of Select" width="345x" height="250px">
+<br>
+<p>By writing this code You can get below result.</p>
+<label for="car">Your Favourite Car Company</label>
+<select id="car" name="car" required size="0">
+    <option selected>--Select--</option>
+    <option value="BMW">BMW</option>
+    <option value="Mercedez">Mercedez</option>
+    <option value="Audi">Audi</option>
+    <option Value="Defender">Land Rover</option>
+</select>
+<input type="submit">
+
+<br><br>
+<h3>Attributes of &lt;select&gt; Element</h3>
+<h4>1. multiple Allows selecting multiple options.</h4>
+<h4>2. size Defines how many options are visible at once.</h4>
+<h4>3. required Makes selection mandatory.</h4>
+
+<br>
+<h3>Attributes of &lt;option&gt; (inside &lt;select&gt;) Element</h3>
+<h4>1. value attribute tells what value sent to backend when selected.</h4>
+<h4>2. selected Makes an option selected by default.</h4>
+<br><br>
+<h3>5. The &lt;textarea&gt; Element</h3>
+<p>The &lt;textarea&gt; element is used in forms to create a multi-line text input field.</p>
+<p>By writing this code you will get below output</p>
+<pre>
+&lt;textarea name="message" row="10" col="30"&gt;
+The Dog is a Loyal Animal.
+&lt;/textarea&gt;
+</pre>
+
+<textarea name="message" id="message" rows="4" cols="50">
+Dog is a loyal animal
+</textarea>
+
+<br><br>
+<h3>6. The &lt;fieldset&gt; and &lt;legend&gt; Elements</h3>
+<p>&lt;fieldset&gt; creates a box (with a border by default) around the grouped controls.</p>
+<p>The &lt;legend&gt; tag is used to add a title/caption for a &lt;fieldset&gt;.</p>
+<img src="images/fieldset.png" alt="code of fieldset" height="245px" width="650px">
+<p>By writing the above code you can get the below output.</p>
+<form>
+    <fieldset>
+        <legend>INTERESTS</legend>
+        <label for="hero">Favourite Character : </label> <br>
+        <input type="text" id="hero" name="FavChar" placeholder:"Captain America">
+        <br>
+        <label for="movie">Favourite Series : </label><br>
+        <input type="text" id="movie" name="FavMovie" placeholder:Games of Thrones>
+        <br><br>
+        <input type="Submit" value="Submit">
+    </fieldset>
+
+    <br>
+    <hr>
+    <br><br>
+    <h2>input types</h2>
+    <pre>
+text: Single-line text input (name, city, etc.)
+password: Masked input for passwords
+email: Email address input with format validation
+number:	Numeric input (age, quantity, ratings)
+checkbox: Multiple selections (hobbies, interests)
+radio: Single choice from multiple options (gender, yes/no)
+submit: Sends the form data to the server
+reset: Resets all form fields to default values
+button: Clickable button for JavaScript actions
+date: Pick a date (birthday, appointment)
+file: Upload files (resume, image, document)
+tel: Telephone input (phone number)
+    </pre>
+
+</form>
+<hr>
+<h2>Multimedia tag</h2>
+<h3>Audi tag</h3>
+<p>It is used to play audio directly in web page.</p>
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
+<section>
+
+<h3>Video tag</h3>
+<p>It is useed to play video directly in web page.</p>
+&lt;video width="720" height="440" controls&gt;<br>
+  &lt;source src="1124(2).mp4" type="video/mp4"&gt;<br>
+&lt;/video&gt;
+<p>By writing above code you can get below output</p>
+<video width="150px" height="300px" controls>
+  <source src="videos/1124(1).mp4" type="video/mp4">
+</video>
+
+<br><br>
+<h3>iframe</h3>
+<p>The &lt;iframe&gt; tag in HTML is used to embed another webpage or external content inside your current webpage.</p>
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/JFYSOx51TH4"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+</body>
+</html>
